@@ -11,7 +11,7 @@ function MantainCard({
   id,
 }) {
   function handleDeleteClick() {
-    fetch(`http://localhost:3000/Mantainance/${id}`, {
+    fetch(`https://rideapi.herokuapp.com/Mantainance/${id}`, {
       method: "DELETE",
     })
       .then((r) => r.json())

@@ -70,7 +70,7 @@ function AddVehicle({ handleNew, handleDisplay }) {
       };
   
       console.log(newVehicle);
-      fetch("http://localhost:3000/Mantainance", {
+      fetch("https://rideapi.herokuapp.com/Mantainance", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

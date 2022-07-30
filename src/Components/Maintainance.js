@@ -30,7 +30,7 @@ function Maintainace() {
     setVehicles(searchedVehicles);
   }
   useEffect(() => {
-    fetch(" http://localhost:3000/Mantainance")
+    fetch(" https://rideapi.herokuapp.com/Mantainance")
       .then((r) => r.json())
       .then((data) => {
         setVehicles(data);
